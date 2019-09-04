@@ -13,9 +13,9 @@ class CalculaTempo
 
     public $tempo = 0;
 
-    public function __construct(int $tempo, float $progressoBase, float $metal)
+    public function __construct(int $tempo, float $progressoBase, float $meta)
     {
-        $this->meta = $metal;
+        $this->meta = $meta;
         $this->tempoBase = $tempo;
         $this->progressoBase = $progressoBase;
         $this->progressoPorSegundo = ($this->progressoBase / $this->tempoBase);
