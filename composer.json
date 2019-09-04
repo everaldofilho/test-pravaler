@@ -1,0 +1,19 @@
+{
+    "name": "everaldofilho/test-pravaler",
+    "description": "Teste de Logica",
+    "require": {
+        "php": ">=7.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\" : "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Everaldo da costa",
+            "email": "everaldo.webmail@gmail.com.br"
+        }
+    ]
+}
