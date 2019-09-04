@@ -3,7 +3,7 @@
 ## Rodando os Exercicios
 - Rode o composer: ``composer install ``
 - Subindo um servidor: ``php -S localhost:8081``
-- Console: ``php index.php`
+- Console: ``php index.php``
 
 ## Exercício 1
 
@@ -130,5 +130,7 @@ $tempo->calculaTempo(15);
 echo "Leva {$tempo->tempo} segundos para chegar {$tempo->meta}" . PHP_EOL;
 
 ````
+
+## Resultado no browser
 
 ![Exercicos](doc/exercicios.png)
