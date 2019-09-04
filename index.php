@@ -30,5 +30,5 @@ foreach ($produtos as $produto) {
  */
 $tempo = new CalculaTempo(30, 25, 0.10);
 echo '<h1>Exercicio 2</h1>' . PHP_EOL;
-$tempo->calculaTempo(5);
+$tempo->calculaTempo(15);
 echo "Leva {$tempo->tempo} segundos para chegar {$tempo->meta}" . PHP_EOL;
