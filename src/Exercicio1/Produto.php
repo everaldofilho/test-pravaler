@@ -24,7 +24,7 @@ class Produto
 
     public function verificaDesconto()
     {
-        if ($this->quantidade >= 0 && $this->quantidade <= 5) {
+        if ($this->quantidade <= 5) {
             $this->porcentagemDesconto = 2;
         }
 
@@ -41,5 +41,16 @@ class Produto
     {
         $this->valorDesconto = ($this->valorTotal * $this->porcentagemDesconto) / 100;
         $this->valorTotalAPagar = $this->valorTotal - $this->valorDesconto;
+    }
+
+    public function print()
+    {
+        echo "Produto: {$this->nome}<br>" . PHP_EOL;
+        echo "Quantidade: {$this->quantidade}<br>" . PHP_EOL;
+        echo "Valor Unitário: R$ {$this->valorUnitario}<br>" . PHP_EOL;
+        echo "Total: R$ {$this->valorTotal}<br>" . PHP_EOL;
+        echo "Desconto: R$ {$this->valorDesconto} ({$this->porcentagemDesconto}%)<br>" . PHP_EOL;
+        echo "Total a Pagar: R$ {$this->valorTotalAPagar}<br>" . PHP_EOL;
+        echo "------------------------------------------<br>" . PHP_EOL . PHP_EOL;
     }
 }
